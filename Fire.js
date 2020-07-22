@@ -8,14 +8,9 @@ class Fire {
   init = () => {
     if (!firebase.apps.length) {
       firebase.initializeApp({
-        apiKey: 'AIzaSyBvtBq03N0cPvmkq5jRFZ8qgyKT337cSyk',
-        authDomain: 'chatapp-db622.firebaseapp.com',
-        databaseURL: 'https://chatapp-db622.firebaseio.com',
-        projectId: 'chatapp-db622',
-        storageBucket: 'chatapp-db622.appspot.com',
-        messagingSenderId: '184211188959',
-        appId: '1:184211188959:web:7fc209c27f5f15f6cc0d6a',
-        measurementId: 'G-RYZJJN7EYM',
+        //go to your project settings in your firebase project console
+        //select config option in the Firebase sdk snippet part and copy all the credentials
+        //and paste them here as it is
       });
     }
   };
