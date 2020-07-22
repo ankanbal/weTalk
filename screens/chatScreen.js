@@ -18,7 +18,7 @@ export default class ChatScreen extends React.Component {
   componentDidMount() {
     Fire.get((message) =>
       this.setState((previous) => ({
-        messages: GiftedChat.append(previous.message, message),
+        messages: GiftedChat.append(previous.messages, message),
       })),
     );
   }
@@ -34,7 +34,7 @@ export default class ChatScreen extends React.Component {
         user={this.user}
       />
     );
-    if (Platform.OS == 'android') {
+    if (Platform.OS === 'android') {
       return (
         <KeyboardAvoidingView
           style={{flex: 1}}

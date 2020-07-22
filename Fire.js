@@ -29,7 +29,7 @@ class Fire {
   };
 
   send = (messages) => {
-    messages.ForEach((item) => {
+    messages.forEach((item) => {
       const message = {
         text: item.text,
         timestamp: firebase.database.ServerValue.TIMESTAMP,
@@ -44,7 +44,7 @@ class Fire {
     const {key: _id} = message;
     const createdAt = new Date(timestamp);
     return {
-      id_,
+      _id,
       createdAt,
       text,
       user,

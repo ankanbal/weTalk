@@ -13,12 +13,15 @@ export default class LoginScreen extends React.Component {
   state = {
     name: '',
   };
+
   continue = () => {
     this.props.navigation.navigate('Chat', {name: this.state.name});
   };
+
   changeName = (text) => {
     this.setState({name: text});
   };
+
   render() {
     return (
       <View style={styles.container}>
